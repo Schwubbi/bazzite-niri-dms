@@ -9,11 +9,15 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
-dnf5 -y install niri dgop dsearch matugen wl-clipboard cliphist cava qt6-multimedia
+dnf5 -y install niri cava qt6-qtmultimedia
 
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms
 dnf5 -y copr disable avengemedia/dms
+
+dnf5 -y copr enable avengemedia/danklinux
+dnf5 -y install dsearch
+dnf5 -y copr disable avengemedia/danklinux
 
 #### enabling a System Unit File
 
