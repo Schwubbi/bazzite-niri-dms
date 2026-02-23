@@ -21,5 +21,4 @@ dnf5 -y copr disable avengemedia/danklinux
 
 #### enabling a System Unit File
 
-systemctl --global add-wants niri.service dms
-systemctl --global add-wants dms dsearch.service
+systemctl --global add-wants niri.service dms dsearch.service
